@@ -1,5 +1,5 @@
-# Run
+# 使い方
 
 ```bash
-$ node ./src/main.js ./src/sample_code.jis
+$ node index.js sample_code.jis
 ```

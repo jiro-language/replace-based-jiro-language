@@ -1,6 +1,6 @@
 const fs = require('fs');
 const syntax = require('./syntax.json');
-const translate = require('./translator.js');
+const translate = require('./src/translator.js');
 
 function main() {
   const filePath = process.argv[2];
@@ -12,6 +12,8 @@ function main() {
   const result = translate(source, syntax.words);
   console.log(result);
   console.log('---------------------------------------------------------');
+
+  return result;
 }
 
 main();
